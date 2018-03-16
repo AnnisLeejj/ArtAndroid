@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CircleActivity">
+    tools:context=".Activities.CircleActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <com.heking.artandroid.CustomerView.CircleView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="#ccc"
+        android:padding="15dp"
+        app:center_color="#ff0"
+        app:center_raduis="0.5"
+        app:circle_color="#F0f" />
+</RelativeLayout>
