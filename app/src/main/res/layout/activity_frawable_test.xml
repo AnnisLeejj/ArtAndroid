@@ -4,30 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activities.FrawableTest">
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="match_parent"
+        android:background="@drawable/iv_background"
+        android:layout_height="300dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/iv_show">
 
         <Button
-            android:id="@+id/bt_1"
+            android:id="@+id/start_transition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="自定义圆形" />
+            android:text="start" />
 
         <Button
-            android:id="@+id/bt_2"
+            android:id="@+id/reverse_transition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RemoteView" />
-        <Button
-            android:id="@+id/bt_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Drawable" />
+            android:text="reverse" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
