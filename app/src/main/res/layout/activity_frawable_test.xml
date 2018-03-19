@@ -9,10 +9,11 @@
     <ImageView
         android:id="@+id/iv_show"
         android:layout_width="match_parent"
-        android:background="@drawable/iv_background"
-        android:layout_height="300dp" />
+        android:layout_height="300dp"
+        android:background="@drawable/iv_background" />
 
     <LinearLayout
+        android:id="@+id/controler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -29,6 +30,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="reverse" />
+
+        <Button
+            android:text="属性动画"
+            android:id="@+id/start_layout_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/tb_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是一个示例"
+        app:layout_constraintTop_toBottomOf="@+id/controler" />
 
 </android.support.constraint.ConstraintLayout>
