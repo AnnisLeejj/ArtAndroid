@@ -7,6 +7,7 @@ import android.widget.Button
 import com.heking.artandroid.Activities.CircleActivity
 import com.heking.artandroid.Activities.FrawableTest
 import com.heking.artandroid.Activities.RemoteViewTest
+import com.heking.artandroid.Activities.WindowAndWindowManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.bt_1).setOnClickListener({ startActivity(Intent(this@MainActivity, CircleActivity::class.java)) })
         findViewById<Button>(R.id.bt_2).setOnClickListener({ startActivity(Intent(this@MainActivity, RemoteViewTest::class.java)) })
         findViewById<Button>(R.id.bt_3).setOnClickListener({ startActivity(Intent(this@MainActivity, FrawableTest::class.java)) })
+        findViewById<Button>(R.id.bt_4).setOnClickListener({ startActivity(Intent(this@MainActivity, WindowAndWindowManager::class.java)) })
     }
 }
 
